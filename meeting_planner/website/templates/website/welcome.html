@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome!</title>
-    <link rel="stylesheet" href="/static/website/style.css">
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
     <h1>Welcome to Meeting Planner</h1>
     <p>
         This is app for the course
@@ -23,5 +20,4 @@
     </ul>
 
 <a href="{% url 'rooms' %}">Rooms</a>
-</body>
-</html>
+{% endblock %}
